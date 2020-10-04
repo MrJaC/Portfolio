@@ -1,0 +1,51 @@
+<ion-header>
+
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Projects</ion-title>
+        <ion-buttons slot="end">
+            <ion-button href="https://github.com/MrJaC">
+                <ion-icon name="logo-github">
+                </ion-icon>
+            </ion-button>
+            <ion-button>
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </ion-button>
+            <ion-button>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </ion-button>
+            <ion-button>
+                <ion-icon name="mail-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <div *ngFor="let item of data">
+                    <ion-card class="ion-no-padding">
+                        <ion-card-header>
+                            <ion-img [src]="item.image"></ion-img>
+                            <ion-card-title>{{item.title}} | {{item.type}}
+                            </ion-card-title>
+                            <ion-card-subtitle>{{item.blurb}}</ion-card-subtitle>
+
+                        </ion-card-header>
+
+                        <ion-card-content>
+                            {{item.description}}
+                        </ion-card-content>
+                        <ion-note class="ion-padding-start">
+                            {{item.tech.one}} {{item.tech.two}} {{item.tech.three}} {{item.tech.four}} {{item.tech.five}} {{item.tech.six}}
+                        </ion-note>
+                    </ion-card>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
