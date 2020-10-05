@@ -4,11 +4,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home/Inbox',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
-    path: 'home/:id',
+    path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.FolderPageModule)
   },
   {
@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'resume',
     loadChildren: () => import('./cv/resume/resume.module').then( m => m.ResumePageModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   }
 ];
 

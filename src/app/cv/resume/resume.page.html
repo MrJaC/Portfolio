@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="ion-no-border">
     <ion-toolbar>
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
@@ -23,87 +23,82 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <ion-grid>
+    <ion-grid class="ion-padding">
         <!-- Experience -->
         <ion-row>
             <ion-col>
-                <h1>Experience</h1>
+                <h1 class="ion-text-center ion-text-uppercase">Experience</h1>
             </ion-col>
         </ion-row>
-        <ion-row>
-            <ion-col>
-                <h4>MOBILE DEVELOPER | DRIVERS LICENCE AND SA ID SCANNER | AUGUST 2020</h4>
-                <ion-list lines="none">
-                    <ion-item>
-                        Technologies used: Android Studio | JAVA
-                    </ion-item>
-                    <ion-item>
-                        Client needed to supply barcode scanners to various location’s but the South African driver’s license barcode is encrypted
-                    </ion-item>
-                    <ion-item>
-                        Created an android package that Honeywell scanners can use to decrypt the SA driver’s license and enable storage of driver license details in their online database.
-                    </ion-item>
-                </ion-list>
-                <ion-list>
-                    <ion-label>
-                        <ion-button fill="clear" href="https://github.com/MrJaC/SADL-Decrypt">
-                            Github
-                            <ion-icon name="logo-github">
-
-                            </ion-icon>
-                        </ion-button>
-                    </ion-label>
-                </ion-list>
-            </ion-col>
-        </ion-row>
+        <div *ngFor="let item of cvExp">
+            <ion-row class="ion-margin">
+                <ion-col>
+                    <ion-card>
+                        <ion-card-header>
+                            <h4 class="ion-text-capitalize">{{ item.title}}</h4>
+                            <h5>{{ item.type}}</h5>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ion-list lines="none">
+                                <ion-item>
+                                    {{item.problem}}
+                                </ion-item>
+                                <ion-item>
+                                    {{item.solution}}
+                                </ion-item>
+                            </ion-list>
+                            <ion-list>
+                                <ion-item>
+                                    {{item.tech}}
+                                </ion-item>
+                            </ion-list>
+                            <ion-list>
+                                <ion-button>
+                                    {{item.url[0].github}}
+                                </ion-button>
+                            </ion-list>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </div>
         <!-- Education -->
         <ion-row>
             <ion-col>
-                <h1>Education</h1>
+                <h1 class="ion-text-center ion-text-uppercase">Education</h1>
             </ion-col>
         </ion-row>
-        <ion-row>
-            <ion-col>
-                <h4>MICROSOFT TECHNOLOGY ASSOCIATE: HTML5 APPLICATION DEVELOPMENT FUNDAMENTALS </h4>
-            </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col>
-                <h4>CERTIFICATE IV IN WEB-BASED TECHNLOGIES | 20/07/2015 – 25/11/2015 | ULTIMO –TAFE, SYDNEY</h4>
-                <ion-list lines="none">
-                    <ion-item>
-                        Studied how to build responsive websites using technologies such as HTML5, CSS3, JavaScript, PHP, MySQL and WordPress.
-                    </ion-item>
-                </ion-list>
-            </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col>
-                <h4>BTECT NATIONAL DIPLOMA IN IT PRACTITIONERS (SOFTWARE DEVELOPMENT) | 2010-2012 | BEDFORD COLLEGE, UNITED KINGDOM</h4>
-                <ion-list lines="none">
-                    <ion-item>
-                        Achieved 2 A Levels (Distinction, Merit
-                    </ion-item>
-                    <ion-item>
-                        Studied information Systems, event programming(C#/VB), front-end and backend production with the following skills: HTML4, CSS2, JavaScript and PHP
-                    </ion-item>
-                    <ion-item>
-                        Functional Skills – IT (Level 2) Passed
-                    </ion-item>
-                    <ion-item>
-                        Function Skills – Mathematics and English (Level 2) Passed
-                    </ion-item>
-                    <ion-item>
-                        Cisco – CCNA certified
-                    </ion-item>
-                </ion-list>
-            </ion-col>
-        </ion-row>
+        <div *ngFor="let item of cvEdu">
+            <ion-row>
+                <ion-col>
+                    <h5>{{ item.title}} | {{item.date}}</h5>
+                    <ion-list lines="none">
+                        <ion-item>
+                            {{item.where}}
+                        </ion-item>
+                        <ion-note>
+                            {{item.attained}}
+                        </ion-note>
+                    </ion-list>
+                </ion-col>
+            </ion-row>
+        </div>
         <!-- Skills -->
         <ion-row>
             <ion-col>
-                <h1>Skills</h1>
+                <h1 class="ion-text-center ion-text-uppercase">Skills</h1>
             </ion-col>
+        </ion-row>
+        <ion-row>
+
+            <ion-col size="4" *ngFor="let item of cvSkill" class="ion-text-center">
+                <ion-list lines="none">
+                    <ion-item>
+                        <ion-icon [name]=item.logo></ion-icon> {{item.tech}}
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+
         </ion-row>
 
     </ion-grid>

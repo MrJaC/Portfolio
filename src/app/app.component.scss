@@ -32,6 +32,10 @@ ion-menu.md ion-note {
     //border-bottom: 1px solid var(--ion-color-step-150, #d7d8da);
 }*/
 
+.diagonal-box {
+    background-image: linear-gradient(45deg, #6303B1, #ff0099);
+}
+
 ion-toolbar {
     font-size: 1.5rem;
     min-height: 20px;
@@ -122,5 +126,5 @@ ion-note {
 }
 
 ion-item.selected {
-    --color: var(--ion-color-primary);
+    --color: var(--ion-color-bg-one);
 }
