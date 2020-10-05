@@ -87,9 +87,9 @@ export class CvDataService {
             ],
             type: "Mobile & Web Developer",
             problem:
-              "Building an eCommerce solution to provide products to consumers via a mobile application. ",
+              "Client wanted a solution that tracked their truck drivers and deliveries. ",
             solution:
-              "The system entails a web administration backend, a customer app, a seller app and a delivery tracking system",
+              "It is designed to allow the business owner to report on truck driver productivity with the ability to view their weekly /monthly trip lists, create reports and perform invoicing. The application allows to capture trips, load waybills, petrol and delivery documents",
             url: [
               {
                 github: "",
@@ -97,20 +97,51 @@ export class CvDataService {
                 visible: false,
               },
               {
-                link: "http://ecommerce.jodicoetzee.co.za",
+                link: "",
+                icon: "globe-outline",
+                visible: false,
+              },
+              {
+                playstore:
+                "https://play.google.com/store/apps/details?id=com.zst.app&hl=en_ZA",
+                icon: "logo-google-playstore",
+                visible: true,
+              },
+            ],
+            title: "Zwane Squared Trucking",
+            time_start: "SEPTEMBER 2019",
+            time_end: "NOVEMBER 2020",
+          },
+          {
+            id: 4,
+            show: true,
+            tech: ["WordPress"],
+            type: "Web Developer",
+            problem:
+              "Client needed a website to display their mobile application ",
+            solution:
+              "We decided on a WordPress theme for the fast customization and to allow the client to update the site themselves",
+            url: [
+              {
+                github: "",
+                icon: "logo-github",
+                visible: false,
+              },
+              {
+                link: "https://intouchadvertising.co.za",
                 icon: "globe-outline",
                 visible: true,
               },
               {
                 playstore:
-                  "https://play.google.com/store/apps/details?id=com.oilgasconnect.app",
+                "",
                 icon: "logo-google-playstore",
-                visible: true,
+                visible: false,
               },
             ],
-            title: "OIL & GAS CONNECT",
-            time_start: "JANUARY 2020",
-            time_end: "--",
+            title: "InTouch Advertising",
+            time_start: "June 2019",
+            time_end: "July 2019",
           },
         ],
       },

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CvDataService } from 'src/app/service/cv-data.service';
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.page.html',
@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumePage implements OnInit {
 
-  constructor() { }
+  data: any;
+
+
+  constructor(
+    public cvData: CvDataService
+  ) { }
 
   ngOnInit() {
+  this.displayCVData();
+  }
+
+  displayCVData(){
+
+    this.data = this.cvData.getCVData();
+    console.log(this.data);
+    return this.data;
   }
 
 }
