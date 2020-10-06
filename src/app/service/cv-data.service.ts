@@ -15,7 +15,7 @@ export class CvDataService {
           {
             id: 1,
             show: true,
-            tech: ["JAVA", "Honeywell SDK", "Android SDK"],
+            tech: ["JAVA", " Honeywell SDK", " Android SDK "],
             type: "Mobile Developer",
             problem:
               "Client needed to supply barcode scanners to various location’s but the South African driver’s license barcode is encrypted",
@@ -23,9 +23,34 @@ export class CvDataService {
               "Created an android package that Honeywell scanners can use to decrypt the SA driver’s license and enable storage of driver license details in their online database.",
             url: [
               {
-                github: "https://github.com/MrJaC/SADL-Decrypt",
-                icon: "logo-github",
-                visible: true,
+                github: [
+                  {
+                    visible: true,
+                    link: "https://github.com/MrJaC/SADL-Decrypt",
+                    icon: "logo-github",
+                  },
+                ],
+                website: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "globe-outline",
+                  },
+                ],
+                playstore: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-google-playstore",
+                  },
+                ],
+                ios_store: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-apple-appstore",
+                  },
+                ],
               },
             ],
             title: "DRIVERS LICENCE AND SA ID SCANNER",
@@ -52,20 +77,35 @@ export class CvDataService {
               "The system entails a web administration backend, a customer app, a seller app and a delivery tracking system",
             url: [
               {
-                github: "",
-                icon: "logo-github",
-                visible: false,
-              },
-              {
-                link: "http://ecommerce.jodicoetzee.co.za",
-                icon: "globe-outline",
-                visible: true,
-              },
-              {
-                playstore:
-                  "https://play.google.com/store/apps/details?id=com.oilgasconnect.app",
-                icon: "logo-google-playstore",
-                visible: true,
+                github: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-github",
+                  },
+                ],
+                website: [
+                  {
+                    visible: true,
+                    link: "http://ecommerce.jodicoetzee.co.za",
+                    icon: "globe-outline",
+                  },
+                ],
+                playstore: [
+                  {
+                    visible: true,
+                    link:
+                      "https://play.google.com/store/apps/details?id=com.oilgasconnect.app",
+                    icon: "logo-google-playstore",
+                  },
+                ],
+                ios_store: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-apple-appstore",
+                  },
+                ],
               },
             ],
             title: "OIL & GAS CONNECT",
@@ -92,20 +132,35 @@ export class CvDataService {
               "It is designed to allow the business owner to report on truck driver productivity with the ability to view their weekly /monthly trip lists, create reports and perform invoicing. The application allows to capture trips, load waybills, petrol and delivery documents",
             url: [
               {
-                github: "",
-                icon: "logo-github",
-                visible: false,
-              },
-              {
-                link: "",
-                icon: "globe-outline",
-                visible: false,
-              },
-              {
-                playstore:
-                "https://play.google.com/store/apps/details?id=com.zst.app&hl=en_ZA",
-                icon: "logo-google-playstore",
-                visible: true,
+                github: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-github",
+                  },
+                ],
+                website: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "globe-outline",
+                  },
+                ],
+                playstore: [
+                  {
+                    visible: true,
+                    link:
+                      "https://play.google.com/store/apps/details?id=com.zst.app&hl=en_ZA",
+                    icon: "logo-google-playstore",
+                  },
+                ],
+                ios_store: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-apple-appstore",
+                  },
+                ],
               },
             ],
             title: "Zwane Squared Trucking",
@@ -123,20 +178,34 @@ export class CvDataService {
               "We decided on a WordPress theme for the fast customization and to allow the client to update the site themselves",
             url: [
               {
-                github: "",
-                icon: "logo-github",
-                visible: false,
-              },
-              {
-                link: "https://intouchadvertising.co.za",
-                icon: "globe-outline",
-                visible: true,
-              },
-              {
-                playstore:
-                "",
-                icon: "logo-google-playstore",
-                visible: false,
+                github: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-github",
+                  },
+                ],
+                website: [
+                  {
+                    visible: true,
+                    link: "https://intouchadvertising.co.za",
+                    icon: "globe-outline",
+                  },
+                ],
+                playstore: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-google-playstore",
+                  },
+                ],
+                ios_store: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-apple-appstore",
+                  },
+                ],
               },
             ],
             title: "InTouch Advertising",
@@ -146,7 +215,15 @@ export class CvDataService {
           {
             id: 5,
             show: true,
-            tech: ["CodeIgniter", "Angular", "HTML5", "CSS3", "Ionic 3", "JavaScript", "OneSignal"],
+            tech: [
+              "CodeIgniter",
+              "Angular",
+              "HTML5",
+              "CSS3",
+              "Ionic 3",
+              "JavaScript",
+              "OneSignal",
+            ],
             type: "Mobile & Web Developer",
             problem:
               "Client had an idea to create an advertisment platform via a mobile application for both iOS and Android",
@@ -154,20 +231,36 @@ export class CvDataService {
               "Built the mobile application using Ionic version 3 & used the Codeigniter Framework for the backend. The application pulls in JSON data for display purposes as well integrated OneSignal for notifications.",
             url: [
               {
-                github: "",
-                icon: "logo-github",
-                visible: false,
-              },
-              {
-                link: "https://intouchadvertising.co.za",
-                icon: "globe-outline",
-                visible: true,
-              },
-              {
-                playstore:
-                "https://play.google.com/store/apps/details?id=com.intoucheastrand.intoucheastrandapp",
-                icon: "logo-google-playstore",
-                visible: true,
+                github: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-github",
+                  },
+                ],
+                website: [
+                  {
+                    visible: true,
+                    link: "https://intouchadvertising.co.za",
+                    icon: "globe-outline",
+                  },
+                ],
+                playstore: [
+                  {
+                    visible: true,
+                    link:
+                      "https://play.google.com/store/apps/details?id=com.intoucheastrand.intoucheastrandapp",
+                    icon: "logo-google-playstore",
+                  },
+                ],
+                ios_store: [
+                  {
+                    visible: true,
+                    link:
+                      "https://apps.apple.com/za/app/intouch-eastrand/id1459395264",
+                    icon: "logo-apple-appstore",
+                  },
+                ],
               },
             ],
             title: "InTouch Advertising Mobile Application",
@@ -185,20 +278,34 @@ export class CvDataService {
               "We decided on a WordPress Theme and all intregration were set up by myself, which also allowed the clients employees to edit any content or add in any new courses.",
             url: [
               {
-                github: "",
-                icon: "logo-github",
-                visible: false,
-              },
-              {
-                link: "https://awciinstute.co.za",
-                icon: "globe-outline",
-                visible: true,
-              },
-              {
-                playstore:
-                "",
-                icon: "logo-google-playstore",
-                visible: false,
+                github: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-github",
+                  },
+                ],
+                website: [
+                  {
+                    visible: true,
+                    link: "https://awciinstute.co.za",
+                    icon: "globe-outline",
+                  },
+                ],
+                playstore: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-google-playstore",
+                  },
+                ],
+                ios_store: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-apple-appstore",
+                  },
+                ],
               },
             ],
             title: "AWCI Institute",
@@ -210,27 +317,40 @@ export class CvDataService {
             show: true,
             tech: ["WordPress"],
             type: "Web Developer",
-            problem:
-              "Client wanted to revamp their website",
+            problem: "Client wanted to revamp their website",
             solution:
               "AWCI required a new and fresh look for their company website. I decided to go with WordPress as they were familiar with the platform. The requirements were to be able to show case their properties and for their employees to login and update page content when needed.",
             url: [
               {
-                github: "",
-                icon: "logo-github",
-                visible: false,
-              },
-              {
-                link: "https://awciproperty.co.za",
-                icon: "globe-outline",
-                visible: true,
-              },
-              {
-                playstore:
-                "",
-                icon: "logo-google-playstore",
-                visible: false,
-              },
+                github: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-github",
+                  },
+                ],
+                website: [
+                  {
+                    visible: true,
+                    link: "https://awciproperty.co.za",
+                    icon: "globe-outline",
+                  },
+                ],
+                playstore: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-google-playstore",
+                  },
+                ],
+                ios_store: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-apple-appstore",
+                  },
+                ],
+              }
             ],
             title: "AWCI Property",
             time_start: "April 2018",
@@ -247,21 +367,35 @@ export class CvDataService {
               "The Solution was to go with WordPress & WooCommerce which allowed the studio to allow for bookings and to sell products related to their studio and to allow ttheir respective artists to upload their content( ART Work )",
             url: [
               {
-                github: "",
-                icon: "logo-github",
-                visible: false,
-              },
-              {
-                link: "https://v-ink.com.au",
-                icon: "globe-outline",
-                visible: true,
-              },
-              {
-                playstore:
-                "",
-                icon: "logo-google-playstore",
-                visible: false,
-              },
+                github: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-github",
+                  },
+                ],
+                website: [
+                  {
+                    visible: true,
+                    link: "https://v-ink.com.au",
+                    icon: "globe-outline",
+                  },
+                ],
+                playstore: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-google-playstore",
+                  },
+                ],
+                ios_store: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-apple-appstore",
+                  },
+                ],
+              }
             ],
             title: "Venomous Ink",
             time_start: "January 2016",
@@ -278,25 +412,39 @@ export class CvDataService {
               "I fixed navigational items, changed layouts, updated content and added various items as well doing WordPress updates and database backups.",
             url: [
               {
-                github: "",
-                icon: "logo-github",
-                visible: false,
-              },
-              {
-                link: "https://tattoodirectory.com.au",
-                icon: "globe-outline",
-                visible: true,
-              },
-              {
-                playstore:
-                "",
-                icon: "logo-google-playstore",
-                visible: false,
-              },
+                github: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-github",
+                  },
+                ],
+                website: [
+                  {
+                    visible: true,
+                    link: "https://tattoodirectory.com.au",
+                    icon: "globe-outline",
+                  },
+                ],
+                playstore: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-google-playstore",
+                  },
+                ],
+                ios_store: [
+                  {
+                    visible: false,
+                    link: null,
+                    icon: "logo-apple-appstore",
+                  },
+                ],
+              }
             ],
             title: "Tattoo Directory",
             time_start: " Febuary 2016",
-            time_end: "",
+            time_end: null,
           },
         ],
       },
@@ -376,7 +524,7 @@ export class CvDataService {
             },
             {
               tech: "PHP",
-              logo: "",
+              logo: null,
             },
           ],
         },

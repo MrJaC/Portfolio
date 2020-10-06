@@ -24,6 +24,11 @@
 
 <ion-content [fullscreen]="true">
     <ion-grid class="ion-padding">
+        <ion-row>
+            <ion-col>
+                <p>Download CV</p>
+            </ion-col>
+        </ion-row>
         <!-- Experience -->
         <ion-row>
             <ion-col>
@@ -33,43 +38,46 @@
         <div *ngFor="let item of cvExp">
             <ion-row class="ion-margin">
                 <ion-col>
-                    <ion-card>
-                        <ion-card-header>
-                            <h4 class="ion-text-capitalize">{{ item.title}}</h4>
-                            <h5>{{ item.type}}</h5>
-                        </ion-card-header>
-                        <ion-card-content>
-                            <ion-list lines="none">
-                                <ion-item>
-                                    {{item.problem}}
-                                </ion-item>
-                                <ion-item>
-                                    {{item.solution}}
-                                </ion-item>
-                            </ion-list>
-                            <ion-list>
-                                <ion-item>
-                                    {{item.tech}}
-                                </ion-item>
-                            </ion-list>
-                            <ion-list>
-                                <ion-button>
-                                    {{item.url[0].github}}
+                    <h5 class="ion-text-uppercase">{{ item.type}}</h5>
+                    <h4 class="ion-text-capitalize">{{ item.title}}</h4>
+
+
+                    <ion-list lines="none">
+                        <ion-item>
+                            {{item.problem}}
+                        </ion-item>
+                        <ion-item>
+                            {{item.solution}}
+                        </ion-item>
+                    </ion-list>
+                    <ion-list>
+                        <ion-item class="ion-text-lowercase">
+                            {{item.tech}}
+                        </ion-item>
+                    </ion-list>
+                    <ion-list>
+                        <div *ngFor="let subItem of item.url">
+                            <div *ngIf="subItem.visible === true">
+                                <ion-button fill="clear" [href]="subItem.github">
+                                    GitHub
+                                    <ion-icon name="logo-github">
+                                    </ion-icon>
                                 </ion-button>
-                            </ion-list>
-                        </ion-card-content>
-                    </ion-card>
+                            </div>
+                        </div>
+                    </ion-list>
+
                 </ion-col>
             </ion-row>
         </div>
         <!-- Education -->
-        <ion-row>
+        <ion-row class="ion-margin">
             <ion-col>
                 <h1 class="ion-text-center ion-text-uppercase">Education</h1>
             </ion-col>
         </ion-row>
         <div *ngFor="let item of cvEdu">
-            <ion-row>
+            <ion-row class="ion-margin">
                 <ion-col>
                     <h5>{{ item.title}} | {{item.date}}</h5>
                     <ion-list lines="none">
@@ -86,12 +94,12 @@
             </ion-row>
         </div>
         <!-- Skills -->
-        <ion-row>
+        <ion-row class="ion-margin">
             <ion-col>
                 <h1 class="ion-text-center ion-text-uppercase">Skills</h1>
             </ion-col>
         </ion-row>
-        <ion-row>
+        <ion-row class="ion-margin">
 
             <ion-col size="4" *ngFor="let item of cvSkill" class="ion-text-center">
                 <ion-list lines="none">
