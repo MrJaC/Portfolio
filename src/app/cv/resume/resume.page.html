@@ -76,9 +76,11 @@
                         <ion-item>
                             {{item.where}}
                         </ion-item>
-                        <ion-note>
-                            {{item.attained}}
-                        </ion-note>
+                        <div *ngFor="let subItems of item.attained">
+                            <ion-note>
+                                {{subItems.text}}
+                            </ion-note>
+                        </div>
                     </ion-list>
                 </ion-col>
             </ion-row>
