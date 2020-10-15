@@ -22,7 +22,14 @@ const routes: Routes = [
   {
     path: 'contact',
     loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
-  }
+  },
+  {
+    path: 'view-project',
+    loadChildren: () => import('./projects/view-project/view-project.module').then( m => m.ViewProjectPageModule)
+  },
+  { path: '**', 
+    loadChildren: () => import('./error/error.module').then( m => m.ErrorPageModule)
+  },  // Wildcard route for a 404 page
 ];
 
 @NgModule({

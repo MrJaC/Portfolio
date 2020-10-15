@@ -1,21 +1,21 @@
-<ion-header [translucent]="true" class="ion-no-borde section-experience">
+<ion-header [translucent]="false" class="ion-no-borde section-experience">
     <ion-toolbar class="section-experience">
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
         <ion-title>Resume</ion-title>
         <ion-buttons slot="end">
-            <ion-button href="https://github.com/MrJaC">
+            <ion-button class="underline--magical" href="https://github.com/MrJaC">
                 <ion-icon name="logo-github">
                 </ion-icon>
             </ion-button>
-            <ion-button>
+            <ion-button class="underline--magical">
                 <ion-icon name="logo-linkedin"></ion-icon>
             </ion-button>
-            <ion-button>
+            <ion-button class="underline--magical">
                 <ion-icon name="logo-twitter"></ion-icon>
             </ion-button>
-            <ion-button>
+            <ion-button class="underline--magical">
                 <ion-icon name="mail-outline"></ion-icon>
             </ion-button>
         </ion-buttons>
@@ -28,7 +28,7 @@
         <div>
             <ion-row>
                 <ion-col>
-                    <h1 class="ion-text-center ion-text-uppercase">Experience</h1>
+                    <h1 class="ion-text-center ion-text-capitalize">Experience</h1>
                 </ion-col>
             </ion-row>
             <div *ngFor="let item of cvExp">
@@ -54,53 +54,62 @@
                                         {{item.tech}}
                                     </ion-item>
                                 </ion-list>
-                                <ion-list>
-                                    <ion-item>
-                                        <div *ngFor="let subItem of item.url">
-                                            <div *ngFor="let git of subItem.github">
-                                                <div *ngIf="git.visible === true">
+
+                            </ion-card-content>
+                            <ion-footer>
+                                <ion-row>
+
+                                    <div *ngFor="let subItem of item.url">
+                                        <div *ngFor="let git of subItem.github">
+                                            <div *ngIf="git.visible === true">
+                                                <ion-col>
                                                     <ion-button fill="clear" [href]="git.link">
                                                         <ion-icon slot="start" [name]="git.icon">
                                                         </ion-icon>
                                                         GitHub
-
                                                     </ion-button>
-                                                </div>
+                                                </ion-col>
                                             </div>
-                                            <div *ngFor="let web of subItem.website">
-                                                <div *ngIf="web.visible === true">
+                                        </div>
+                                        <div *ngFor="let web of subItem.website">
+                                            <div *ngIf="web.visible === true">
+                                                <ion-col>
                                                     <ion-button fill="clear" [href]="web.link">
                                                         <ion-icon slot="start" [name]="web.icon">
                                                         </ion-icon>
                                                         Website
 
                                                     </ion-button>
-                                                </div>
+                                                </ion-col>
                                             </div>
-                                            <div *ngFor="let play of subItem.playstore">
-                                                <div *ngIf="play.visible === true">
+                                        </div>
+                                        <div *ngFor="let play of subItem.playstore">
+                                            <div *ngIf="play.visible === true">
+                                                <ion-col>
                                                     <ion-button fill="clear" [href]="play.link">
                                                         <ion-icon slot="start" [name]="play.icon">
                                                         </ion-icon>
                                                         PlayStore
 
                                                     </ion-button>
-                                                </div>
+                                                </ion-col>
                                             </div>
-                                            <div *ngFor="let ios of subItem.ios_store">
-                                                <div *ngIf="ios.visible === true">
+                                        </div>
+                                        <div *ngFor="let ios of subItem.ios_store">
+                                            <div *ngIf="ios.visible === true">
+                                                <ion-col>
                                                     <ion-button fill="clear" [href]="ios.link">
                                                         <ion-icon slot="start" [name]="ios.icon">
                                                         </ion-icon>
                                                         iOSStore
 
                                                     </ion-button>
-                                                </div>
+                                                </ion-col>
                                             </div>
                                         </div>
-                                    </ion-item>
-                                </ion-list>
-                            </ion-card-content>
+                                    </div>
+                                </ion-row>
+                            </ion-footer>
                         </ion-card>
                     </ion-col>
                 </ion-row>
@@ -119,11 +128,11 @@
                         <ion-card-header>
                             <ion-card-subtitle>
 
-                                {{item.where}}
+                                {{item.where}} | {{item.date}}
 
                             </ion-card-subtitle>
                             <ion-card-title>
-                                {{ item.title}} | {{item.date}}
+                                {{ item.title}}
                             </ion-card-title>
 
                         </ion-card-header>
@@ -167,10 +176,10 @@
     <ion-toolbar>
         <ion-row>
             <ion-col>
-                <ion-button href="# " class="ion-float-end ">
+                <ion-button href="../assets/resume/JodiCoetzee_CV_2020_SEPT.pdf" class="ion-float-end ">
                     Download PDF
                 </ion-button>
-                <ion-button href="# " class="ion-float-end ">
+                <ion-button href="../assets/resume/JodiCoetzee_CV_2020_SEPT.docx" class="ion-float-end ">
                     Download DOCX
                 </ion-button>
             </ion-col>

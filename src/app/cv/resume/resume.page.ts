@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+
+
 import { CvDataService } from 'src/app/service/cv-data.service';
 @Component({
   selector: 'app-resume',

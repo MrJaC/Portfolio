@@ -6,6 +6,12 @@ ion-menu ion-content {
     --background: var(--ion-item-background, var(--ion-background-color, --ion-color-primary));
 }
 
+ion-split-pane {
+    --side-max-width: 330px;
+    --background: linear-gradient(45deg, #6303B1, #ff0099);
+    --border: none;
+}
+
 ion-menu.md ion-content {
     --padding-start: 8px;
     --padding-end: 8px;
@@ -14,8 +20,9 @@ ion-menu.md ion-content {
 }
 
 ion-menu.md ion-list {
-    padding: 20px 0;
+    padding: 50px 0;
     margin-top: 20vh;
+    --background-hover: blue;
 }
 
 ion-menu.md ion-note {
@@ -26,11 +33,6 @@ ion-menu.md ion-list-header,
 ion-menu.md ion-note {
     padding-left: 50px;
 }
-
-
-/*ion-menu.md ion-list#inbox-list {
-    //border-bottom: 1px solid var(--ion-color-step-150, #d7d8da);
-}*/
 
 .diagonal-box {
     background-image: linear-gradient(45deg, #6303B1, #ff0099);
@@ -59,6 +61,11 @@ ion-menu.md ion-item {
     --padding-start: 10px;
     --padding-end: 10px;
     border-radius: 4px;
+    &:hover {
+        background-size: 100% 100%;
+        color: white;
+        border-radius: 4px;
+    }
 }
 
 ion-menu.md ion-item.selected {
@@ -126,5 +133,18 @@ ion-note {
 }
 
 ion-item.selected {
-    --color: var(--ion-color-bg-one);
+    --background: linear-gradient(45deg, #6303B1, #ff0099);
+}
+
+.underline--magical {
+    background-image: linear-gradient(45deg, #6303B1, #ff0099);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+    &:hover {
+        background-size: 100% 100%;
+        color: white;
+        border-radius: 4px;
+    }
 }

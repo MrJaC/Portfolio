@@ -14,10 +14,15 @@ export class ProjectDataService {
         id: 1,
         title: "Intouch Advertising",
         type: "Website",
-        image: "assets/projects/intouch/website/intouch_website.png",
+        mainImage: "assets/images/default.jpg",
+        images: [
+          {
+            img: "assets/images/default.jpg",
+          }
+        ],
         tech: {
           one: "WordPress",
-          two: "PHP",
+          two: "PHP", 
           three: "CSS",
           four: "HTML5",
           five: "Theme",
@@ -31,12 +36,121 @@ export class ProjectDataService {
         id: 2,
         title: "Intouch Advertising",
         type: "Mobile Application",
-        image: "Image",
+        mainImage: "assets/images/default.jpg",
+        images: [
+          {
+            img: "",
+          }
+        ],
         tech: {
           one: "JavaScript",
           two: "PHP",
           three: "CSS",
           four: "HTML5",
+        },
+        description: "This is a descrition",
+        blurb: "This is a blurb",
+        url: "https://google.co.za",
+      },
+      {
+        id: 3,
+        title: "Oil & Gas Connect",
+        type: "Mobile Application",
+        mainImage: "assets/projects/oilgasconnect/feature_one_white_connect.png",
+        image: [
+          {
+            img: ""
+          }
+        ],
+        tech: {
+          one: "JavaScript",
+          two: "PHP",
+          three: "CSS",
+          four: "HTML5",
+        },
+        description: "This is a descrition",
+        blurb: "This is a blurb",
+        url: "https://google.co.za",
+      },
+      {
+        id: 4,
+        title: "Oil & Gas Connect",
+        type: "Backend - Laravel",
+        mainImage: "assets/images/default.jpg",
+        image: [
+          {
+            img: ""
+          }
+        ],
+        tech: {
+          one: "JavaScript",
+          two: "PHP",
+          three: "CSS",
+          four: "HTML5",
+          five: "Laravel"
+        },
+        description: "This is a descrition",
+        blurb: "This is a blurb",
+        url: "https://google.co.za",
+      },
+      {
+        id: 5,
+        title: "Oil & Gas Connect",
+        type: "Backend - Laravel",
+        mainImage: "assets/images/default.jpg",
+        image: [
+          {
+            img: ""
+          }
+        ],
+        tech: {
+          one: "JavaScript",
+          two: "PHP",
+          three: "CSS",
+          four: "HTML5",
+          five: "Laravel"
+        },
+        description: "This is a descrition",
+        blurb: "This is a blurb",
+        url: "https://google.co.za",
+      },
+      {
+        id: 6,
+        title: "Oil & Gas Connect",
+        type: "Backend - Laravel",
+        mainImage: "assets/images/default.jpg",
+        image: [
+          {
+            img: ""
+          }
+        ],
+        tech: {
+          one: "JavaScript",
+          two: "PHP",
+          three: "CSS",
+          four: "HTML5",
+          five: "Laravel"
+        },
+        description: "This is a descrition",
+        blurb: "This is a blurb",
+        url: "https://google.co.za",
+      },
+      {
+        id: 7,
+        title: "Oil & Gas Connect",
+        type: "Backend - Laravel",
+        mainImage: "assets/images/default.jpg",
+        image: [
+          {
+            img: ""
+          }
+        ],
+        tech: {
+          one: "JavaScript",
+          two: "PHP",
+          three: "CSS",
+          four: "HTML5",
+          five: "Laravel"
         },
         description: "This is a descrition",
         blurb: "This is a blurb",

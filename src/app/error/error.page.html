@@ -1,0 +1,34 @@
+<ion-header [translucent]="true" class="ion-no-border section-bg">
+    <ion-toolbar class="section-bg">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>404</ion-title>
+        <ion-buttons slot="end">
+            <ion-button class="underline--magical" href="https://github.com/MrJaC">
+                <ion-icon name="logo-github">
+
+                </ion-icon>
+            </ion-button>
+            <ion-button href="#" class="underline--magical">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </ion-button>
+            <ion-button href="#" class="underline--magical">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </ion-button>
+            <ion-button routerLink="/contact" class="underline--magical">
+                <ion-icon name="mail-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        Page not Found
+
+        <ion-button routerLink="/home">
+            Home
+        </ion-button>
+    </ion-grid>
+</ion-content>

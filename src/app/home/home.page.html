@@ -1,22 +1,22 @@
-<ion-header [translucent]="true" class="ion-no-border">
-    <ion-toolbar>
+<ion-header [translucent]="true" class="ion-no-border section-bg">
+    <ion-toolbar class="section-bg">
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
-
+        <ion-title>Home</ion-title>
         <ion-buttons slot="end">
-            <ion-button href="https://github.com/MrJaC">
+            <ion-button class="underline--magical" href="https://github.com/MrJaC">
                 <ion-icon name="logo-github">
 
                 </ion-icon>
             </ion-button>
-            <ion-button>
+            <ion-button href="#" class="underline--magical">
                 <ion-icon name="logo-linkedin"></ion-icon>
             </ion-button>
-            <ion-button>
+            <ion-button href="#" class="underline--magical">
                 <ion-icon name="logo-twitter"></ion-icon>
             </ion-button>
-            <ion-button>
+            <ion-button routerLink="/contact" class="underline--magical">
                 <ion-icon name="mail-outline"></ion-icon>
             </ion-button>
         </ion-buttons>
@@ -24,21 +24,21 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <ion-grid>
-        <div id="container">
-            <div id="main-content">
-                <div class="">
-                    <ion-row>
-                        <ion-col>
-                            <div>
-                                <p>I am a <span class="">full stack developer</span> who has experience in the full development of software applications from start to finish.</p>
-                            </div>
-                            <p> I perform requirements gathering, estimating, software development, milestone reviews, testing and delivery to backend host platforms and to the Apple and Google App Stores.</p>
-                            <p> In all my apps and websites I have worked closely with the clients to ensure they get a good product that meets their expectations.</p>
-                        </ion-col>
-                    </ion-row>
+
+
+    <div id="container">
+        <div id="main-content">
+            <div class="main-section">
+
+                <div>
+                    <p>I am a <span class="">full stack developer</span> who has experience in the full development of software applications from start to finish.</p>
                 </div>
+                <p> I perform requirements gathering, estimating, software development, milestone reviews, testing and delivery to backend host platforms and to the Apple and Google App Stores.</p>
+                <p> In all my apps and websites I have worked closely with the clients to ensure they get a good product that meets their expectations.</p>
+
             </div>
         </div>
-    </ion-grid>
+    </div>
+
+
 </ion-content>

@@ -1,46 +1,62 @@
-<ion-header [translucent]="true" class="ion-no-border">
+<ion-header [translucent]="false" class="ion-no-border">
     <ion-toolbar>
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
         <ion-title>Contact</ion-title>
         <ion-buttons slot="end">
-            <ion-button href="https://github.com/MrJaC">
+            <ion-button class="underline--magical" href="https://github.com/MrJaC">
                 <ion-icon name="logo-github">
                 </ion-icon>
             </ion-button>
-            <ion-button>
+            <ion-button class="underline--magical">
                 <ion-icon name="logo-linkedin"></ion-icon>
             </ion-button>
-            <ion-button>
+            <ion-button class="underline--magical">
                 <ion-icon name="logo-twitter"></ion-icon>
             </ion-button>
-            <ion-button>
+            <ion-button class="underline--magical">
                 <ion-icon name="mail-outline"></ion-icon>
             </ion-button>
         </ion-buttons>
     </ion-toolbar>
 </ion-header>
 <ion-content>
-    <ion-grid>
-        <ion-row>
-            <ion-col>
-                <ion-item>
-                    <!-- Email -->
-                    <ion-label position="fixed">Your Email</ion-label>
-                    <ion-input autocomplete="email"></ion-input>
-                </ion-item>
-                <ion-item>
-                    <!-- Name -->
-                    <ion-label position="fixed">Your Name</ion-label>
-                    <ion-input></ion-input>
-                </ion-item>
-                <ion-item>
-                    <ion-label position="fixed">Your Message</ion-label>
-                    <ion-textarea></ion-textarea>
-                </ion-item>
-
-            </ion-col>
-        </ion-row>
-    </ion-grid>
+    <div id="map-section">
+        <ion-grid>
+            <div id="section-contact">
+                <ion-row>
+                    <ion-col>
+                        <ion-item>
+                            <!-- Email -->
+                            <ion-label position="stacked">Your Email</ion-label>
+                            <ion-input autocomplete="email" type="email"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <!-- Name -->
+                            <ion-label position="stacked">Your Name</ion-label>
+                            <ion-input></ion-input>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label position="stacked">Your Message</ion-label>
+                            <ion-textarea></ion-textarea>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-button size="medium" class="ion-float-end ">
+                            Send
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </div>
+        </ion-grid>
+    </div>
 </ion-content>
