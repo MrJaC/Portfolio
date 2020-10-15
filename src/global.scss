@@ -43,7 +43,8 @@
     transition: background-size 0.25s ease-in;
     &:hover {
         background-size: 100% 100%;
-        color: white;
+        color: black;
+        transition: all 0.5s ease-out;
     }
 }
 
@@ -51,6 +52,7 @@ ion-toolbar {
     font-size: 1.5rem;
     min-height: 20px;
     font-variant-caps: all-petite-caps;
+    background: var(--ion-colour-background-main);
 }
 
 h1,
@@ -58,6 +60,19 @@ h2,
 h3,
 h4,
 h5 {
-    color: white;
+    color: #ecf0f1;
     font-variant-caps: all-petite-caps;
+}
+
+ion-content {
+    background: #55b9f3;
+    box-shadow: 20px 20px 60px #489dcf, -20px -20px 60px #62d5ff;
+}
+
+ion-title {
+    color: #ecf0f1;
+}
+
+ion-header ion-toolbar ion-buttons {
+    color: #ecf0f1;
 }

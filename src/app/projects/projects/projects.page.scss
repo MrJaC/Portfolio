@@ -10,10 +10,14 @@ ion-toolbar {
 
 ion-card {
     height: 400px;
+    max-width: 800px;
+    width: 100%;
 }
 
 ion-img {
     background-size: cover;
-    border-radius: 4%;
-    max-height: 100%;
+}
+
+ion-card:hover {
+    background-color: pink;
 }

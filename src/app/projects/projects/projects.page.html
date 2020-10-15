@@ -1,6 +1,5 @@
 <ion-header [translucent]="true" class="ion-no-border">
-
-    <ion-toolbar>
+    <ion-toolbar color="background-main">
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -23,22 +22,21 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-    <ion-grid class="section-bg">
+<ion-content [fullscreen]="true" color="background-main">
+    <ion-grid>
         <ion-row>
             <ion-col class="ion-text-center">
                 <h1>Latest Projects</h1>
 
             </ion-col>
         </ion-row>
-        <ion-row>
-            <ion-col>
+        <ion-row class="ion-margin ion-justify-content-center">
+            <ion-col size="auto">
                 <div *ngFor="let item of data">
-                    <ion-card class="ion-no-padding">
-                        <ion-row class="ion-align-items-start">
-                            <ion-col>
-                                <ion-img [src]="item.mainImage"></ion-img>
-                            </ion-col>
+                    <ion-card button="true" (click)="presentProject(item.id, item.title)">
+                        <ion-card-content>
+                            <ion-img [src]="item.mainImage"></ion-img>
+
                             <!--<ion-col>
                                
                                 <ion-card-title>
@@ -53,7 +51,8 @@
                                     </div>
                                 </ion-card-content>
                             </ion-col>-->
-                        </ion-row>
+                        </ion-card-content>
+
                     </ion-card>
                 </div>
             </ion-col>

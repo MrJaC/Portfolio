@@ -1,5 +1,5 @@
-<ion-header [translucent]="false" class="ion-no-borde section-experience">
-    <ion-toolbar class="section-experience">
+<ion-header [translucent]="true" class="ion-no-border">
+    <ion-toolbar color="background-main">
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -22,8 +22,8 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-    <ion-grid class="ion-padding section-experience">
+<ion-content [fullscreen]="true" color="background-main">
+    <ion-grid class="ion-padding ">
         <!-- Experience -->
         <div>
             <ion-row>
@@ -32,8 +32,8 @@
                 </ion-col>
             </ion-row>
             <div *ngFor="let item of cvExp">
-                <ion-row class="ion-margin">
-                    <ion-col>
+                <ion-row class="ion-margin ion-justify-content-center">
+                    <ion-col size="auto">
                         <ion-card>
                             <ion-card-header>
                                 <ion-card-subtitle>{{ item.type}} | {{ item.time_start }} - {{ item.time_end }}</ion-card-subtitle>
@@ -56,58 +56,62 @@
                                 </ion-list>
 
                             </ion-card-content>
-                            <ion-footer>
-                                <ion-row>
+                            <ion-footer class="ion-no-border">
+                                <ion-row class="ion-float-end">
 
                                     <div *ngFor="let subItem of item.url">
-                                        <div *ngFor="let git of subItem.github">
-                                            <div *ngIf="git.visible === true">
-                                                <ion-col>
+                                        <ion-col>
+                                            <div *ngFor="let git of subItem.github">
+                                                <div *ngIf="git.visible === true">
+
                                                     <ion-button fill="clear" [href]="git.link">
                                                         <ion-icon slot="start" [name]="git.icon">
                                                         </ion-icon>
                                                         GitHub
                                                     </ion-button>
-                                                </ion-col>
+
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div *ngFor="let web of subItem.website">
-                                            <div *ngIf="web.visible === true">
-                                                <ion-col>
+                                            <div *ngFor="let web of subItem.website">
+                                                <div *ngIf="web.visible === true">
+
                                                     <ion-button fill="clear" [href]="web.link">
                                                         <ion-icon slot="start" [name]="web.icon">
                                                         </ion-icon>
                                                         Website
 
                                                     </ion-button>
-                                                </ion-col>
+
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div *ngFor="let play of subItem.playstore">
-                                            <div *ngIf="play.visible === true">
-                                                <ion-col>
+                                            <div *ngFor="let play of subItem.playstore">
+                                                <div *ngIf="play.visible === true">
+
                                                     <ion-button fill="clear" [href]="play.link">
                                                         <ion-icon slot="start" [name]="play.icon">
                                                         </ion-icon>
                                                         PlayStore
 
                                                     </ion-button>
-                                                </ion-col>
+
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div *ngFor="let ios of subItem.ios_store">
-                                            <div *ngIf="ios.visible === true">
-                                                <ion-col>
+                                            <div *ngFor="let ios of subItem.ios_store">
+                                                <div *ngIf="ios.visible === true">
+
                                                     <ion-button fill="clear" [href]="ios.link">
                                                         <ion-icon slot="start" [name]="ios.icon">
                                                         </ion-icon>
                                                         iOSStore
 
                                                     </ion-button>
-                                                </ion-col>
+
+                                                </div>
                                             </div>
-                                        </div>
+                                        </ion-col>
+
                                     </div>
+
                                 </ion-row>
                             </ion-footer>
                         </ion-card>
@@ -122,8 +126,8 @@
             </ion-col>
         </ion-row>
         <div *ngFor="let item of cvEdu">
-            <ion-row class="ion-margin">
-                <ion-col>
+            <ion-row class="ion-margin ion-justify-content-center">
+                <ion-col size="auto">
                     <ion-card>
                         <ion-card-header>
                             <ion-card-subtitle>
