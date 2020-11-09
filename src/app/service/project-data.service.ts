@@ -18,18 +18,88 @@ export class ProjectDataService {
         images: [
           {
             img: "assets/images/default.jpg",
-          }
+          },
         ],
         tech: {
-          one: "WordPress",
-          two: "PHP", 
-          three: "CSS",
-          four: "HTML5",
-          five: "Theme",
-          six: "CMS"
+          wordpress: [
+            {
+              show: true,
+              name: "WordPress",
+              logo: "logo-wordpress",
+            },
+          ],
+          php: [
+            {
+              show: true,
+              name: "PHP",
+              logo: null,
+            },
+          ],
+          java: [
+            {
+              show: false,
+              name: "Java",
+              logo: null,
+            },
+          ],
+          javascript: [
+            {
+              show: true,
+              name: "JavaScript",
+              logo: "logo-javascript",
+            },
+          ],
+          angular: [
+            {
+              show: false,
+              name: "Angular",
+              logo: "logo-Angular",
+            },
+          ],
+          css: [
+            {
+              show: true,
+              name: "CSS",
+              logo: "logo-css3",
+            },
+          ],
+          html: [
+            {
+              show: true,
+              name: "HTML5",
+              logo: "logo-html5",
+            },
+          ],
+          ionic: [
+            {
+              show: true,
+              name: "Ionic",
+              logo: "logo-ionic",
+            },
+          ],
+          laravel: [
+            {
+              show: true,
+              name: "Laravel",
+              logo: "logo-laravel",
+            },
+          ],
+          bootstrap: [
+            {
+              show: true,
+              name: "Bootstrap",
+              logo: null,
+            },
+          ],
         },
-        description: "InTouch Advertising required a quick CMS, as they wanted to updated themselves. Standard Theme via Themeforest installation and setup - with slight customization.",
-        blurb: "InTouch Advertising required a quick CMS",
+        description: [
+          {
+            text_one:
+              "InTouch Advertising required a quick CMS, as they wanted to updated themselves. Standard Theme via Themeforest installation and setup - with slight customization.",
+            text_two: "",
+          },
+        ],
+        blurb: "InTouch Advertising required a quick CMS...",
         url: "https://intouchadvertising.co.za",
       },
       {
@@ -40,13 +110,79 @@ export class ProjectDataService {
         images: [
           {
             img: "",
-          }
+          },
         ],
         tech: {
-          one: "JavaScript",
-          two: "PHP",
-          three: "CSS",
-          four: "HTML5",
+          wordpress: [
+            {
+              show: true,
+              name: "WordPress",
+              logo: "logo-wordpress",
+            },
+          ],
+          php: [
+            {
+              show: true,
+              name: "PHP",
+              logo: null,
+            },
+          ],
+          java: [
+            {
+              show: false,
+              name: "Java",
+              logo: null,
+            },
+          ],
+          javascript: [
+            {
+              show: true,
+              name: "JavaScript",
+              logo: "logo-javascript",
+            },
+          ],
+          angular: [
+            {
+              show: false,
+              name: "Angular",
+              logo: "logo-Angular",
+            },
+          ],
+          css: [
+            {
+              show: true,
+              name: "CSS",
+              logo: "logo-css3",
+            },
+          ],
+          html: [
+            {
+              show: true,
+              name: "HTML5",
+              logo: "logo-html5",
+            },
+          ],
+          ionic: [
+            {
+              show: true,
+              name: "Ionic",
+              logo: "logo-ionic",
+            },
+          ],
+          laravel: [
+            {
+              show: true,
+              name: "Laravel",
+              logo: "logo-laravel",
+            },
+          ],
+          bootstrap: [
+            {
+              show: true,
+              name: "Bootstrap",
+              logo: null,
+            },
+          ],
         },
         description: "This is a descrition",
         blurb: "This is a blurb",
@@ -56,17 +192,84 @@ export class ProjectDataService {
         id: 3,
         title: "Oil & Gas Connect",
         type: "Mobile Application",
-        mainImage: "assets/projects/oilgasconnect/feature_one_white_connect.png",
+        mainImage:
+          "assets/projects/oilgasconnect/feature_one_white_connect.png",
         image: [
           {
-            img: ""
-          }
+            img: "",
+          },
         ],
         tech: {
-          one: "JavaScript",
-          two: "PHP",
-          three: "CSS",
-          four: "HTML5",
+          wordpress: [
+            {
+              show: true,
+              name: "WordPress",
+              logo: "logo-wordpress",
+            },
+          ],
+          php: [
+            {
+              show: true,
+              name: "PHP",
+              logo: null,
+            },
+          ],
+          java: [
+            {
+              show: false,
+              name: "Java",
+              logo: null,
+            },
+          ],
+          javascript: [
+            {
+              show: true,
+              name: "JavaScript",
+              logo: "logo-javascript",
+            },
+          ],
+          angular: [
+            {
+              show: false,
+              name: "Angular",
+              logo: "logo-Angular",
+            },
+          ],
+          css: [
+            {
+              show: true,
+              name: "CSS",
+              logo: "logo-css3",
+            },
+          ],
+          html: [
+            {
+              show: true,
+              name: "HTML5",
+              logo: "logo-html5",
+            },
+          ],
+          ionic: [
+            {
+              show: true,
+              name: "Ionic",
+              logo: "logo-ionic",
+            },
+          ],
+          laravel: [
+            {
+              show: true,
+              name: "Laravel",
+              logo: "logo-laravel",
+            },
+          ],
+          bootstrap: [
+            {
+              show: true,
+              name: "Bootstrap",
+              logo: null,
+            },
+          ],
         },
         description: "This is a descrition",
         blurb: "This is a blurb",
@@ -79,15 +282,80 @@ export class ProjectDataService {
         mainImage: "assets/images/default.jpg",
         image: [
           {
-            img: ""
-          }
+            img: "",
+          },
         ],
         tech: {
-          one: "JavaScript",
-          two: "PHP",
-          three: "CSS",
-          four: "HTML5",
-          five: "Laravel"
+          wordpress: [
+            {
+              show: true,
+              name: "WordPress",
+              logo: "logo-wordpress",
+            },
+          ],
+          php: [
+            {
+              show: true,
+              name: "PHP",
+              logo: null,
+            },
+          ],
+          java: [
+            {
+              show: false,
+              name: "Java",
+              logo: null,
+            },
+          ],
+          javascript: [
+            {
+              show: true,
+              name: "JavaScript",
+              logo: "logo-javascript",
+            },
+          ],
+          angular: [
+            {
+              show: false,
+              name: "Angular",
+              logo: "logo-Angular",
+            },
+          ],
+          css: [
+            {
+              show: true,
+              name: "CSS",
+              logo: "logo-css3",
+            },
+          ],
+          html: [
+            {
+              show: true,
+              name: "HTML5",
+              logo: "logo-html5",
+            },
+          ],
+          ionic: [
+            {
+              show: true,
+              name: "Ionic",
+              logo: "logo-ionic",
+            },
+          ],
+          laravel: [
+            {
+              show: true,
+              name: "Laravel",
+              logo: "logo-laravel",
+            },
+          ],
+          bootstrap: [
+            {
+              show: true,
+              name: "Bootstrap",
+              logo: null,
+            },
+          ],
         },
         description: "This is a descrition",
         blurb: "This is a blurb",
@@ -100,15 +368,80 @@ export class ProjectDataService {
         mainImage: "assets/images/default.jpg",
         image: [
           {
-            img: ""
-          }
+            img: "",
+          },
         ],
         tech: {
-          one: "JavaScript",
-          two: "PHP",
-          three: "CSS",
-          four: "HTML5",
-          five: "Laravel"
+          wordpress: [
+            {
+              show: true,
+              name: "WordPress",
+              logo: "logo-wordpress",
+            },
+          ],
+          php: [
+            {
+              show: true,
+              name: "PHP",
+              logo: null,
+            },
+          ],
+          java: [
+            {
+              show: false,
+              name: "Java",
+              logo: null,
+            },
+          ],
+          javascript: [
+            {
+              show: true,
+              name: "JavaScript",
+              logo: "logo-javascript",
+            },
+          ],
+          angular: [
+            {
+              show: false,
+              name: "Angular",
+              logo: "logo-Angular",
+            },
+          ],
+          css: [
+            {
+              show: true,
+              name: "CSS",
+              logo: "logo-css3",
+            },
+          ],
+          html: [
+            {
+              show: true,
+              name: "HTML5",
+              logo: "logo-html5",
+            },
+          ],
+          ionic: [
+            {
+              show: true,
+              name: "Ionic",
+              logo: "logo-ionic",
+            },
+          ],
+          laravel: [
+            {
+              show: true,
+              name: "Laravel",
+              logo: "logo-laravel",
+            },
+          ],
+          bootstrap: [
+            {
+              show: true,
+              name: "Bootstrap",
+              logo: null,
+            },
+          ],
         },
         description: "This is a descrition",
         blurb: "This is a blurb",
@@ -121,15 +454,80 @@ export class ProjectDataService {
         mainImage: "assets/images/default.jpg",
         image: [
           {
-            img: ""
-          }
+            img: "",
+          },
         ],
         tech: {
-          one: "JavaScript",
-          two: "PHP",
-          three: "CSS",
-          four: "HTML5",
-          five: "Laravel"
+          wordpress: [
+            {
+              show: true,
+              name: "WordPress",
+              logo: "logo-wordpress",
+            },
+          ],
+          php: [
+            {
+              show: true,
+              name: "PHP",
+              logo: null,
+            },
+          ],
+          java: [
+            {
+              show: false,
+              name: "Java",
+              logo: null,
+            },
+          ],
+          javascript: [
+            {
+              show: true,
+              name: "JavaScript",
+              logo: "logo-javascript",
+            },
+          ],
+          angular: [
+            {
+              show: false,
+              name: "Angular",
+              logo: "logo-Angular",
+            },
+          ],
+          css: [
+            {
+              show: true,
+              name: "CSS",
+              logo: "logo-css3",
+            },
+          ],
+          html: [
+            {
+              show: true,
+              name: "HTML5",
+              logo: "logo-html5",
+            },
+          ],
+          ionic: [
+            {
+              show: true,
+              name: "Ionic",
+              logo: "logo-ionic",
+            },
+          ],
+          laravel: [
+            {
+              show: true,
+              name: "Laravel",
+              logo: "logo-laravel",
+            },
+          ],
+          bootstrap: [
+            {
+              show: true,
+              name: "Bootstrap",
+              logo: null,
+            },
+          ],
         },
         description: "This is a descrition",
         blurb: "This is a blurb",
@@ -142,15 +540,80 @@ export class ProjectDataService {
         mainImage: "assets/images/default.jpg",
         image: [
           {
-            img: ""
-          }
+            img: "",
+          },
         ],
         tech: {
-          one: "JavaScript",
-          two: "PHP",
-          three: "CSS",
-          four: "HTML5",
-          five: "Laravel"
+          wordpress: [
+            {
+              show: true,
+              name: "WordPress",
+              logo: "logo-wordpress",
+            },
+          ],
+          php: [
+            {
+              show: true,
+              name: "PHP",
+              logo: null,
+            },
+          ],
+          java: [
+            {
+              show: false,
+              name: "Java",
+              logo: null,
+            },
+          ],
+          javascript: [
+            {
+              show: true,
+              name: "JavaScript",
+              logo: "logo-javascript",
+            },
+          ],
+          angular: [
+            {
+              show: false,
+              name: "Angular",
+              logo: "logo-Angular",
+            },
+          ],
+          css: [
+            {
+              show: true,
+              name: "CSS",
+              logo: "logo-css3",
+            },
+          ],
+          html: [
+            {
+              show: true,
+              name: "HTML5",
+              logo: "logo-html5",
+            },
+          ],
+          ionic: [
+            {
+              show: true,
+              name: "Ionic",
+              logo: "logo-ionic",
+            },
+          ],
+          laravel: [
+            {
+              show: true,
+              name: "Laravel",
+              logo: "logo-laravel",
+            },
+          ],
+          bootstrap: [
+            {
+              show: true,
+              name: "Bootstrap",
+              logo: null,
+            },
+          ],
         },
         description: "This is a descrition",
         blurb: "This is a blurb",

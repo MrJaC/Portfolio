@@ -1,6 +1,6 @@
 <ion-header [translucent]="true" class="ion-no-border">
 
-    <ion-toolbar>
+    <ion-toolbar color="background-main">
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -23,15 +23,16 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
     <div *ngFor="let item of projectData">
 
+        <ion-row class="ion-no-padding ion-no-margin">
+            <ion-col class="ion-no-padding ion-no-margin">
+                <ion-img [src]="item.mainImage"></ion-img>
+            </ion-col>
+        </ion-row>
         <ion-grid>
-            <ion-row>
-                <ion-col>
-                    <ion-img [src]="item.mainImage"></ion-img>
-                </ion-col>
-            </ion-row>
+
 
             <ion-row>
                 <!--Title-->

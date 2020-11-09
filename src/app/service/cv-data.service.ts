@@ -15,6 +15,7 @@ export class CvDataService {
           {
             id: 1,
             show: true,
+            company: "Web Guy",
             tech: ["JAVA", " Honeywell SDK", " Android SDK "],
             type: "Mobile Developer",
             problem:
@@ -60,6 +61,7 @@ export class CvDataService {
           {
             id: 2,
             show: true,
+            company: "Web Guy",
             tech: [
               "Laravel Framework",
               "PHP",
@@ -115,6 +117,7 @@ export class CvDataService {
           {
             id: 3,
             show: true,
+            company: "Web Guy",
             tech: [
               "Codeigniter Framework",
               "PHP",
@@ -170,6 +173,7 @@ export class CvDataService {
           {
             id: 4,
             show: true,
+            company: "Web Guy",
             tech: ["WordPress"],
             type: "Web Developer",
             problem:
@@ -215,6 +219,7 @@ export class CvDataService {
           {
             id: 5,
             show: true,
+            company: "Web Guy",
             tech: [
               "CodeIgniter",
               "Angular",
@@ -270,6 +275,7 @@ export class CvDataService {
           {
             id: 6,
             show: true,
+            company: "Web Guy",
             tech: ["WordPress"],
             type: "Web Developer",
             problem:
@@ -315,6 +321,7 @@ export class CvDataService {
           {
             id: 7,
             show: true,
+            company: "Web Guy",
             tech: ["WordPress"],
             type: "Web Developer",
             problem: "Client wanted to revamp their website",
@@ -359,6 +366,7 @@ export class CvDataService {
           {
             id: 8,
             show: true,
+            company: "Web Guy",
             tech: ["WordPress"],
             type: "Web Developer",
             problem:
@@ -404,6 +412,7 @@ export class CvDataService {
           {
             id: 9,
             show: true,
+            company: "Web Guy",
             tech: ["WordPress"],
             type: "Web Developer",
             problem:
