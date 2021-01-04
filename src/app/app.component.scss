@@ -44,8 +44,8 @@ ion-menu.md ion-content {
 }
 
 ion-menu.md ion-list {
-    padding: 50px 0;
-    margin-top: 20vh;
+    padding: 30px 0;
+    margin-top: 10vh;
 }
 
 ion-menu.md ion-note {
@@ -152,14 +152,16 @@ ion-note {
 }
 
 .underline--magical {
-    background-image: linear-gradient(45deg, #84fab0 0%, #8fd3f4 100%);
+    background-image: linear-gradient(45deg, #84fab0 0%, #8fd3f4 20%);
     background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 100% 100%;
+    background-size: 20% 0.2em;
+    background-position: 0% 100%;
     transition: background-size 0.25s ease-out;
+    color: white;
     &:hover {
+        background-image: linear-gradient(45deg, #84fab0 0%, #8fd3f4 100%);
         background-size: 100% 100%;
-        color: black;
+        color: white !important;
         transition: all 0.5s ease-out;
     }
 }

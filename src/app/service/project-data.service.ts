@@ -15,7 +15,7 @@ export class ProjectDataService {
         title: "Intouch Advertising",
         type: "Website",
         date: "",
-        mainImage: "assets/images/default.jpg",
+        mainImage: "assets/projects/intouch/website/intouch_website.png",
         images: [
           {
             img: "assets/images/default.jpg",
@@ -108,7 +108,94 @@ export class ProjectDataService {
         title: "Intouch Advertising",
         type: "Mobile Application",
         date: "",
-        mainImage: "assets/images/default.jpg",
+        mainImage: "/assets/projects/intouch/application/landing_img_v1.png",
+        images: [
+          {
+            img: "",
+          },
+        ],
+        tech: {
+          wordpress: [
+            {
+              show: true,
+              name: "WordPress",
+              logo: "logo-wordpress",
+            },
+          ],
+          php: [
+            {
+              show: true,
+              name: "PHP",
+              logo: null,
+            },
+          ],
+          java: [
+            {
+              show: false,
+              name: "Java",
+              logo: null,
+            },
+          ],
+          javascript: [
+            {
+              show: true,
+              name: "JavaScript",
+              logo: "logo-javascript",
+            },
+          ],
+          angular: [
+            {
+              show: false,
+              name: "Angular",
+              logo: "logo-Angular",
+            },
+          ],
+          css: [
+            {
+              show: true,
+              name: "CSS",
+              logo: "logo-css3",
+            },
+          ],
+          html: [
+            {
+              show: true,
+              name: "HTML5",
+              logo: "logo-html5",
+            },
+          ],
+          ionic: [
+            {
+              show: true,
+              name: "Ionic",
+              logo: "logo-ionic",
+            },
+          ],
+          laravel: [
+            {
+              show: true,
+              name: "Laravel",
+              logo: "logo-laravel",
+            },
+          ],
+          bootstrap: [
+            {
+              show: true,
+              name: "Bootstrap",
+              logo: null,
+            },
+          ],
+        },
+        description: "This is a descrition",
+        blurb: "This is a blurb",
+        url: "https://google.co.za",
+      },
+      {
+        id: 2,
+        title: "Intouch Advertising - Admin Panel",
+        type: "Admin Panel",
+        date: "",
+        mainImage: "/assets/projects/codeigniter/intouch/intouch_admin_panel.png",
         images: [
           {
             img: "",
@@ -283,7 +370,7 @@ export class ProjectDataService {
         title: "Oil & Gas Connect",
         type: "Backend - Laravel",
         date: "",
-        mainImage: "assets/images/default.jpg",
+        mainImage: "assets/projects/laravel/oilgasconnect_panel/admin_panel_oilgas.png",
         image: [
           {
             img: "",
@@ -367,10 +454,10 @@ export class ProjectDataService {
       },
       {
         id: 5,
-        title: "Oil & Gas Connect",
-        type: "Backend - Laravel",
+        title: "AWCI Property",
+        type: "Wordpress",
         date: "",
-        mainImage: "assets/images/default.jpg",
+        mainImage: "assets/projects/wp/awci_property/awci_property_home_page.png",
         image: [
           {
             img: "",
@@ -454,10 +541,10 @@ export class ProjectDataService {
       },
       {
         id: 6,
-        title: "Oil & Gas Connect",
-        type: "Backend - Laravel",
+        title: "AWCI Institute",
+        type: "Wordpress",
         date: "",
-        mainImage: "assets/images/default.jpg",
+        mainImage: "assets/projects/wp/awci_institute/awci_institute_home.png",
         image: [
           {
             img: "",

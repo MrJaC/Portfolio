@@ -9,12 +9,20 @@ ion-toolbar {
 }
 
 ion-card {
-    height: 400px;
-    max-width: 800px;
+    height: 100%;
+    max-width: 780px;
+    width: 100%;
+    max-height: 320px;
 }
 
 ion-img {
-    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(70%);
+}
+
+img {
+    height: auto;
 }
 
 ion-card:hover {

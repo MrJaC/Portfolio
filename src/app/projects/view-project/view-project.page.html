@@ -28,13 +28,15 @@
 
         <ion-row class="ion-no-padding ion-no-margin">
             <ion-col class="ion-no-padding ion-no-margin">
-                <ion-img [src]="item.mainImage"></ion-img>
+                <div class="header-image-project">
+                    <ion-img [src]="item.mainImage"></ion-img>
+                </div>
             </ion-col>
         </ion-row>
         <ion-grid>
 
 
-            <ion-row>
+            <ion-row class="ion-align-items-center ion-text-center">
                 <!--Title-->
                 <ion-col>
                     <h3 class="project-header"> {{ item.title }}</h3>

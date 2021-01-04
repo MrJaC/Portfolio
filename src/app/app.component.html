@@ -6,11 +6,12 @@
                     <ion-list-header>Jodi Coetzee</ion-list-header>
                     <ion-note>Web & Mobile Developer</ion-note>
 
-                    <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-                        <ion-item class="ion-text-uppercase" (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
-                            <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-                            <ion-label>{{ p.title }}</ion-label>
-                        </ion-item>
+                    <ion-menu-toggle auto-hide="false">
+                        <ion-list class="ion-justify-content-center">
+                            <div *ngFor="let p of appPages; let i = index">
+                                <ion-item class="ion-text-uppercase  underline--magical" (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">{{ p.title }}</ion-item>
+                            </div>
+                        </ion-list>
                     </ion-menu-toggle>
                 </ion-list>
 
