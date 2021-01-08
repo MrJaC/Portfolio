@@ -27,24 +27,23 @@
         <ion-row>
             <ion-col class="ion-text-center">
                 <h1>Latest Projects</h1>
-
             </ion-col>
         </ion-row>
         <ion-row>
             <ion-col class="ion-text-center">
-
-
             </ion-col>
         </ion-row>
-        <ion-row class="ion-margin ion-justify-content-center ion-align-items-start">
+        <ion-row class="ion-padding-end">
             <ion-col size="auto" size-md="6" *ngFor="let item of data">
-                <ion-card button="true" (click)="presentProject(item.id, item.title)">
+                <ion-card class="hover-title" button="true" (click)="presentProject(item.id, item.title)">
                     <ion-card-content class="ion-no-padding ion-no-margin">
                         <ion-img [src]="item.mainImage"></ion-img>
+                        <div class="hover-info">
+                            <h4>Title</h4>
+                            <h6>Subtitle</h6>
+                        </div>
                     </ion-card-content>
-
                 </ion-card>
-
             </ion-col>
         </ion-row>
     </ion-grid>

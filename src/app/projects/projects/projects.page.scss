@@ -17,14 +17,13 @@ ion-card {
 
 ion-img {
     max-width: 100%;
-    height: auto;
-    filter: grayscale(70%);
+    max-height: 100%;
+    height: 400px;
+    width: 780px;
+    filter: grayscale(50%);
+    object-fit: fill;
 }
 
-img {
-    height: auto;
-}
-
-ion-card:hover {
-    background-color: pink;
+.hover-title:hover {
+    filter: grayscale(100%);
 }
