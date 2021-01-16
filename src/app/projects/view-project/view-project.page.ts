@@ -13,6 +13,10 @@ export class ViewProjectPage implements OnInit {
   data: any;
   projectData: any;
   serviceData: any;
+  url: any;
+  blurb: any;
+  descTextOne: any;
+  descTextTwo: any;
 
   constructor(private route: ActivatedRoute, public projData: ProjectDataService,) {
     this.route.queryParams.subscribe((params) => {
@@ -23,11 +27,14 @@ export class ViewProjectPage implements OnInit {
       }
     });
 
+    //Data
+    
     
   }
 
   ngOnInit() {
     this.getProjectDetails();
+
   }
 
 
@@ -41,5 +48,7 @@ export class ViewProjectPage implements OnInit {
       console.log(this.projectData);
       return this.projectData;
   }
-
+  sortDataPackage(data){
+    
+  }
 }

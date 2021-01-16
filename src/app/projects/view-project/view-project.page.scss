@@ -9,8 +9,9 @@
 
 .header-image-project,
 ion-img {
-    height: 600px;
+    height: 360px;
     width: 100%;
     max-height: 100%;
     max-width: 100%;
+    object-fit: auto;
 }

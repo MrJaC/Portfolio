@@ -1,5 +1,5 @@
 <ion-header [translucent]="true" class="ion-no-border">
-    <ion-toolbar color="background-main">
+    <ion-toolbar color="primary">
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -22,7 +22,7 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" color="background-main">
+<ion-content [fullscreen]="true" color="primary">
     <ion-grid>
         <ion-row>
             <ion-col class="ion-text-center">
@@ -31,16 +31,20 @@
         </ion-row>
         <ion-row>
             <ion-col class="ion-text-center">
+
+                <!-- Filter buttons -->
+                <!-- End Filter Buttons -->
             </ion-col>
         </ion-row>
         <ion-row class="ion-padding-end">
-            <ion-col size="auto" size-md="6" *ngFor="let item of data">
+            <ion-col size="auto" size-md="6" *ngFor="let item of items">
+                <div class="title ion-padding-start">
+                    {{item.title}} | {{ item.type}}
+                </div>
                 <ion-card class="hover-title" button="true" (click)="presentProject(item.id, item.title)">
                     <ion-card-content class="ion-no-padding ion-no-margin">
-                        <ion-img [src]="item.mainImage"></ion-img>
-                        <div class="hover-info">
-                            <h4>Title</h4>
-                            <h6>Subtitle</h6>
+                        <div class="hover-img">
+                            <ion-img [src]="item.mainImage"></ion-img>
                         </div>
                     </ion-card-content>
                 </ion-card>

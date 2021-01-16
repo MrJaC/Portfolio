@@ -9,7 +9,7 @@ ion-toolbar {
     position: absolute;
     left: 0;
     right: 0;
-    top: 50%;
+    top: 25%;
 }
 
 #map-display {
@@ -28,4 +28,21 @@ ion-toolbar {
     background-size: contain;
     /* Resize the background image to cover the entire container */
     text-align: center;
+}
+
+ion-item,
+ion-input {
+    border-radius: 8px;
+}
+
+.form-style {
+    width: 360px;
+    max-width: 100%;
+}
+
+.form-style-button {
+    width: 360px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 8px;
 }

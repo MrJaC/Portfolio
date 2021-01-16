@@ -1,5 +1,5 @@
 <ion-header [translucent]="true" class="ion-no-border">
-    <ion-toolbar color="background-main">
+    <ion-toolbar color="primary">
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -21,42 +21,51 @@
         </ion-buttons>
     </ion-toolbar>
 </ion-header>
-<ion-content color="background-main">
-    <div id="map-section">
-        <ion-grid>
-            <div id="section-contact">
-                <ion-row class="ion-margin ion-justify-content-center">
-                    <ion-col size="auto">
-                        <ion-item>
-                            <!-- Email -->
-                            <ion-label position="stacked">Your Email</ion-label>
-                            <ion-input autocomplete="email" type="email"></ion-input>
-                        </ion-item>
-                    </ion-col>
-                    <ion-col size="auto">
-                        <ion-item>
-                            <!-- Name -->
-                            <ion-label position="stacked">Your Name</ion-label>
-                            <ion-input></ion-input>
-                        </ion-item>
-                    </ion-col>
-                </ion-row>
-                <ion-row class="ion-margin ion-justify-content-center">
-                    <ion-col size="auto">
-                        <ion-item>
-                            <ion-label position="stacked">Your Message</ion-label>
-                            <ion-textarea></ion-textarea>
-                        </ion-item>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col>
-                        <ion-button size="medium" class="ion-float-end ">
-                            Send
-                        </ion-button>
-                    </ion-col>
-                </ion-row>
-            </div>
-        </ion-grid>
-    </div>
+<ion-content color="primary">
+
+    <ion-grid>
+        <div id="section-contact">
+            <ion-row>
+                <ion-col>
+                    <h2>Contact me!</h2>
+                </ion-col>
+            </ion-row>
+            <ion-row class="ion-margin ion-justify-content-center">
+                <ion-col size="auto">
+                    <ion-item class="form-style">
+                        <!-- Email -->
+                        <ion-label position="stacked">Your Email</ion-label>
+                        <ion-input autocomplete="email" type="email"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row class="ion-margin ion-justify-content-center">
+                <ion-col size="auto">
+                    <ion-item class="form-style">
+                        <!-- Name -->
+                        <ion-label position="stacked">Your Name</ion-label>
+                        <ion-input></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row class="ion-margin ion-justify-content-center">
+                <ion-col size="auto">
+                    <ion-item class="form-style">
+                        <ion-label position="stacked">Your Message</ion-label>
+                        <ion-textarea></ion-textarea>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row class="ion-margin ion-justify-content-center">
+                <ion-col size="auto">
+
+                    <ion-button size="medium" color="light" class="ion-float-end form-style-button">
+                        Send
+                    </ion-button>
+
+                </ion-col>
+            </ion-row>
+        </div>
+    </ion-grid>
+
 </ion-content>

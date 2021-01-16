@@ -13,7 +13,7 @@ export class ProjectsPage implements OnInit {
   
   @ViewChild(IonInfiniteScroll) infiniteScroll: IonInfiniteScroll;
   data: any;
-
+  items: any = [];
   constructor(
     public projData: ProjectDataService,
     public modalController: ModalController,
@@ -22,7 +22,7 @@ export class ProjectsPage implements OnInit {
 
   ngOnInit() {
     this.getProjects();
-   
+   this.initializeItems();
   }
 
   loadData(event) {
@@ -37,7 +37,25 @@ export class ProjectsPage implements OnInit {
       }
     }, 500);
   }
-
+  initializeItems() {
+    this.items = this.data;
+  }
+  getItems(ev: any) {
+    // Reset items back to all of the items
+    this.initializeItems();
+  
+    // set val to the value of the searchbar
+    let val = ev.target.value;
+  
+    // if the value is an empty string don't filter the items
+    if ((val && val.trim() != "") || (val && val.trim() != null)) {
+      this.items = this.items.filter(item => {
+        return (
+          item.type.toLowerCase().indexOf(val.toLowerCase()) > -1
+        );
+      });
+    }
+  }
 
 
   presentProject(id, title) {

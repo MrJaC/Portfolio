@@ -1,6 +1,6 @@
 <ion-header [translucent]="true" class="ion-no-border">
 
-    <ion-toolbar color="background-main">
+    <ion-toolbar color="primary">
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -24,9 +24,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <div *ngFor="let item of projectData">
+    <div *ngFor="let item of projectData" color="primary">
 
-        <ion-row class="ion-no-padding ion-no-margin">
+        <ion-row class="ion-no-padding ion-no-margin" color="primary">
             <ion-col class="ion-no-padding ion-no-margin">
                 <div class="header-image-project">
                     <ion-img [src]="item.mainImage"></ion-img>
@@ -35,17 +35,18 @@
         </ion-row>
         <ion-grid>
 
-
-            <ion-row class="ion-align-items-center ion-text-center">
-                <!--Title-->
-                <ion-col>
-                    <h3 class="project-header"> {{ item.title }}</h3>
-                </ion-col>
-                <!--Type-->
-                <ion-col>
-                    <h4 class="project-type"> {{ item.type }}</h4>
-                </ion-col>
-            </ion-row>
+            <section id="title">
+                <ion-row class="ion-align-items-center ion-text-center">
+                    <!--Title-->
+                    <ion-col>
+                        <h3 class="project-header"> {{ item.title }}</h3>
+                    </ion-col>
+                    <!--Type-->
+                    <ion-col>
+                        <h4 class="project-type"> {{ item.type }}</h4>
+                    </ion-col>
+                </ion-row>
+            </section>
             <!-- Main Description -->
             <ion-row>
                 <ion-col>
