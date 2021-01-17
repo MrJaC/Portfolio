@@ -1,5 +1,5 @@
 <ion-header [translucent]="true" class="ion-no-border section-bg">
-    <ion-toolbar class="section-bg">
+    <ion-toolbar class="section-bg" color="primary">
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -23,12 +23,19 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="primary">
     <ion-grid>
-        Page not Found
-
-        <ion-button routerLink="/home">
-            Home
-        </ion-button>
+        <ion-row class="ion-margin ion-justify-content-center">
+            <ion-col size="auto">
+                Page not Found
+            </ion-col>
+        </ion-row>
+        <ion-row class="ion-margin ion-justify-content-center">
+            <ion-col size="auto">
+                <ion-button routerLink="/home">
+                    Home
+                </ion-button>
+            </ion-col>
+        </ion-row>
     </ion-grid>
 </ion-content>

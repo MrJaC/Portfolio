@@ -4,6 +4,8 @@ import { ModalController } from '@ionic/angular';
 import { ViewProjectPage } from './../view-project/view-project.page'
 import { IonInfiniteScroll } from '@ionic/angular';
 import { Router, NavigationExtras } from '@angular/router';
+
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.page.html',
@@ -57,7 +59,11 @@ export class ProjectsPage implements OnInit {
     }
   }
 
-
+  get sortDate(){
+    return this.items.sort((a, b) => {
+      return <any>new Date(b.date) - <any>new Date(a.date);
+    });
+  }
   presentProject(id, title) {
     var data = {
       id: id,

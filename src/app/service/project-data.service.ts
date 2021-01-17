@@ -14,7 +14,7 @@ export class ProjectDataService {
         id: 1,
         title: "Intouch Advertising",
         type: "Website",
-        date: "",
+        date: "2019-07-01",
         mainImage: "assets/projects/intouch/website/intouch_website.png",
         images: [
           {
@@ -107,7 +107,7 @@ export class ProjectDataService {
         id: 2,
         title: "Intouch Advertising",
         type: "Mobile Application",
-        date: "",
+        date: "2019-06-01",
         mainImage: "/assets/projects/intouch/application/landing_img_v1.png",
         images: [
           {
@@ -194,7 +194,7 @@ export class ProjectDataService {
         id: 2,
         title: "Intouch Advertising - Admin Panel",
         type: "Admin Panel",
-        date: "",
+        date: "2019-06-01",
         mainImage: "/assets/projects/codeigniter/intouch/intouch_admin_panel.png",
         images: [
           {
@@ -281,7 +281,7 @@ export class ProjectDataService {
         id: 3,
         title: "Oil & Gas Connect",
         type: "Mobile Application",
-        date: "",
+        date: "2020-03-01",
         mainImage:
           "assets/projects/oilgasconnect/feature_one_white_connect.png",
         image: [
@@ -369,7 +369,7 @@ export class ProjectDataService {
         id: 4,
         title: "Oil & Gas Connect",
         type: "Backend - Laravel",
-        date: "",
+        date: "2020-03-01",
         mainImage: "assets/projects/laravel/oilgasconnect_panel/admin_panel_oilgas.png",
         image: [
           {
@@ -456,7 +456,7 @@ export class ProjectDataService {
         id: 5,
         title: "AWCI Property",
         type: "Wordpress",
-        date: "",
+        date: "2018-05-01",
         mainImage: "assets/projects/wp/awci_property/awci_property_home_page.png",
         image: [
           {
@@ -543,7 +543,7 @@ export class ProjectDataService {
         id: 6,
         title: "AWCI Institute",
         type: "Wordpress",
-        date: "",
+        date: "2018-10-01",
         mainImage: "assets/projects/wp/awci_institute/awci_institute_home.png",
         image: [
           {
@@ -630,7 +630,7 @@ export class ProjectDataService {
         id: 7,
         title: "Oil & Gas Connect",
         type: "Backend - Laravel",
-        date: "",
+        date: "2020-03-01",
         mainImage: "assets/images/default.jpg",
         image: [
           {
@@ -717,7 +717,7 @@ export class ProjectDataService {
         id: 8,
         title: "SADL Decryptor",
         type: "Java",
-        date: "",
+        date: "2020-8-01",
         mainImage: "assets/images/default.jpg",
         images: [
           {
