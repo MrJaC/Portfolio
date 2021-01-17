@@ -30,7 +30,7 @@
                     <h2>Contact me!</h2>
                 </ion-col>
             </ion-row>
-            <form [formGroup]="messageForm">
+            <form [formGroup]="messageForm" (ngSubmit)="sendMessage()" novalidate>
                 <ion-row class="ion-margin ion-justify-content-center">
 
 
@@ -38,8 +38,8 @@
                         <p *ngIf="submitAttempt" style="color: #ea6153;">Please fill out all details accurately.</p>
                         <ion-item class="form-style">
                             <!-- Name -->
-                            <ion-label position="stacked">Name</ion-label>
-                            <ion-input autocomplete="name" type="text" formControlName="name"></ion-input>
+                            <ion-label position="floating">Name</ion-label>
+                            <ion-input autocomplete="name" type="text" formControlName="name" required></ion-input>
                         </ion-item>
 
                     </ion-col>
@@ -48,23 +48,23 @@
                     <ion-col size="auto">
                         <ion-item class="form-style">
                             <!-- Email -->
-                            <ion-label position="stacked">Email</ion-label>
-                            <ion-input autocomplete="email" type="email" formControlName="email"></ion-input>
+                            <ion-label position="floating">Email</ion-label>
+                            <ion-input autocomplete="email" type="email" formControlName="email" required></ion-input>
                         </ion-item>
                     </ion-col>
                 </ion-row>
                 <ion-row class="ion-margin ion-justify-content-center">
                     <ion-col size="auto">
                         <ion-item class="form-style">
-                            <ion-label position="stacked">Message</ion-label>
-                            <ion-textarea type="text" formControlName="message"></ion-textarea>
+                            <ion-label position="floating">Message</ion-label>
+                            <ion-textarea type="text" formControlName="message" required></ion-textarea>
                         </ion-item>
                     </ion-col>
                 </ion-row>
                 <ion-row class="ion-margin ion-justify-content-center">
                     <ion-col size="auto">
 
-                        <ion-button size="medium" color="light" class="ion-float-end form-style-button">
+                        <ion-button size="medium" color="light" type="submit" class="ion-float-end form-style-button">
                             Send
                         </ion-button>
 
