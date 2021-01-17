@@ -627,14 +627,14 @@ export class ProjectDataService {
         url: "https://google.co.za",
       },
       {
-        id: 7,
-        title: "Oil & Gas Connect",
-        type: "Backend - Laravel",
-        date: "2020-03-01",
-        mainImage: "assets/images/default.jpg",
-        image: [
+        id: 8,
+        title: "SADL Decryptor",
+        type: "Java",
+        date: "2020-8-01",
+        mainImage: "assets/projects/sadl/sadl.jpg",
+        images: [
           {
-            img: "",
+            img: "assets/images/default.jpg",
           },
         ],
         tech: {
@@ -709,16 +709,22 @@ export class ProjectDataService {
             },
           ],
         },
-        description: "This is a descrition",
-        blurb: "This is a blurb",
-        url: "https://google.co.za",
+        description: [
+          {
+            text_one:
+              "InTouch Advertising required a quick CMS, as they wanted to updated themselves. Standard Theme via Themeforest installation and setup - with slight customization.",
+            text_two: "",
+          },
+        ],
+        blurb: "InTouch Advertising required a quick CMS...",
+        url: "https://intouchadvertising.co.za",
       },
       {
-        id: 8,
-        title: "SADL Decryptor",
-        type: "Java",
-        date: "2020-8-01",
-        mainImage: "assets/images/default.jpg",
+        id: 9,
+        title: "Zwane Trucking - Mobile Application",
+        type: "Angular",
+        date: "2019-09-01",
+        mainImage: "assets/projects/zwane/zwane-mobile/zwane.jpg",
         images: [
           {
             img: "assets/images/default.jpg",
@@ -727,7 +733,7 @@ export class ProjectDataService {
         tech: {
           wordpress: [
             {
-              show: true,
+              show: false,
               name: "WordPress",
               logo: "logo-wordpress",
             },
@@ -755,7 +761,7 @@ export class ProjectDataService {
           ],
           angular: [
             {
-              show: false,
+              show: true,
               name: "Angular",
               logo: "logo-Angular",
             },
@@ -783,7 +789,7 @@ export class ProjectDataService {
           ],
           laravel: [
             {
-              show: true,
+              show: false,
               name: "Laravel",
               logo: "logo-laravel",
             },
