@@ -23,7 +23,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" color="primary">
-    <ion-grid class="ion-padding">
+    <ion-grid>
         <!-- Experience -->
 
         <ion-row>
@@ -31,9 +31,9 @@
                 <h1 class="ion-text-center ion-text-capitalize ">Experience</h1>
             </ion-col>
         </ion-row>
-        <div *ngFor="let item of cvExp ">
-            <ion-row class="ion-margin ion-justify-content-center ">
-                <ion-col size="auto ">
+        <ion-row class="ion-margin ion-justify-content-center ">
+            <ion-col size="auto">
+                <div *ngFor="let item of cvExp ">
                     <ion-card color="tertiary">
                         <ion-card-header>
                             <ion-card-title>{{ item.company }}</ion-card-title>
@@ -117,10 +117,11 @@
 
 
                     </ion-card>
-                </ion-col>
-            </ion-row>
-        </div>
 
+                </div>
+            </ion-col>
+
+        </ion-row>
 
 
         <!-- Education -->
@@ -129,9 +130,10 @@
                 <h1 class="ion-text-center ion-text-uppercase ">Education</h1>
             </ion-col>
         </ion-row>
-        <div *ngFor="let item of cvEdu ">
-            <ion-row class="ion-margin ion-justify-content-center ">
-                <ion-col size="auto ">
+
+        <ion-row class="ion-margin ion-justify-content-center ">
+            <ion-col size="auto">
+                <div *ngFor="let item of cvEdu">
                     <ion-card color="tertiary">
                         <ion-card-header>
                             <ion-card-subtitle>
@@ -156,9 +158,10 @@
                             </ion-list>
                         </ion-card-content>
                     </ion-card>
-                </ion-col>
-            </ion-row>
-        </div>
+                </div>
+            </ion-col>
+        </ion-row>
+
         <!-- Skills -->
         <ion-row class="ion-margin ">
             <ion-col>
