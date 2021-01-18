@@ -812,6 +812,285 @@ export class ProjectDataService {
         blurb: "InTouch Advertising required a quick CMS...",
         url: "https://intouchadvertising.co.za",
       },
+      {
+        id: 10,
+        title: "Zwane Trucking - Admin Panel",
+        type: "PHP",
+        date: "2019-09-01",
+        mainImage: "assets/projects/zwane/zwane-mobile/zwane.jpg",
+        images: [
+          {
+            img: "assets/images/default.jpg",
+          },
+        ],
+        tech: {
+          wordpress: [
+            {
+              show: false,
+              name: "WordPress",
+              logo: "logo-wordpress",
+            },
+          ],
+          php: [
+            {
+              show: true,
+              name: "PHP",
+              logo: null,
+            },
+          ],
+          java: [
+            {
+              show: false,
+              name: "Java",
+              logo: null,
+            },
+          ],
+          javascript: [
+            {
+              show: true,
+              name: "JavaScript",
+              logo: "logo-javascript",
+            },
+          ],
+          angular: [
+            {
+              show: true,
+              name: "Angular",
+              logo: "logo-Angular",
+            },
+          ],
+          css: [
+            {
+              show: true,
+              name: "CSS",
+              logo: "logo-css3",
+            },
+          ],
+          html: [
+            {
+              show: true,
+              name: "HTML5",
+              logo: "logo-html5",
+            },
+          ],
+          ionic: [
+            {
+              show: true,
+              name: "Ionic",
+              logo: "logo-ionic",
+            },
+          ],
+          laravel: [
+            {
+              show: false,
+              name: "Laravel",
+              logo: "logo-laravel",
+            },
+          ],
+          bootstrap: [
+            {
+              show: true,
+              name: "Bootstrap",
+              logo: null,
+            },
+          ],
+        },
+        description: [
+          {
+            text_one:
+              "InTouch Advertising required a quick CMS, as they wanted to updated themselves. Standard Theme via Themeforest installation and setup - with slight customization.",
+            text_two: "",
+          },
+        ],
+        blurb: "InTouch Advertising required a quick CMS...",
+        url: "https://intouchadvertising.co.za",
+      },
+      {
+        id: 11,
+        title: "Consulting - Website",
+        type: "WordPress",
+        date: "2020-06-01",
+        mainImage: "assets/projects/consulting/consulting_landing.jpg",
+        images: [
+          {
+            img: "assets/images/default.jpg",
+          },
+        ],
+        tech: {
+          wordpress: [
+            {
+              show: false,
+              name: "WordPress",
+              logo: "logo-wordpress",
+            },
+          ],
+          php: [
+            {
+              show: true,
+              name: "PHP",
+              logo: null,
+            },
+          ],
+          java: [
+            {
+              show: false,
+              name: "Java",
+              logo: null,
+            },
+          ],
+          javascript: [
+            {
+              show: true,
+              name: "JavaScript",
+              logo: "logo-javascript",
+            },
+          ],
+          angular: [
+            {
+              show: true,
+              name: "Angular",
+              logo: "logo-Angular",
+            },
+          ],
+          css: [
+            {
+              show: true,
+              name: "CSS",
+              logo: "logo-css3",
+            },
+          ],
+          html: [
+            {
+              show: true,
+              name: "HTML5",
+              logo: "logo-html5",
+            },
+          ],
+          ionic: [
+            {
+              show: true,
+              name: "Ionic",
+              logo: "logo-ionic",
+            },
+          ],
+          laravel: [
+            {
+              show: false,
+              name: "Laravel",
+              logo: "logo-laravel",
+            },
+          ],
+          bootstrap: [
+            {
+              show: true,
+              name: "Bootstrap",
+              logo: null,
+            },
+          ],
+        },
+        description: [
+          {
+            text_one:
+              "InTouch Advertising required a quick CMS, as they wanted to updated themselves. Standard Theme via Themeforest installation and setup - with slight customization.",
+            text_two: "",
+          },
+        ],
+        blurb: "InTouch Advertising required a quick CMS...",
+        url: "https://intouchadvertising.co.za",
+      },
+      {
+        id: 12,
+        title: "Netrisk - Website",
+        type: "WordPress",
+        date: "2019-08-01",
+        mainImage: "assets/projects/netrisk/netris-landing.jpg",
+        images: [
+          {
+            img: "assets/images/default.jpg",
+          },
+        ],
+        tech: {
+          wordpress: [
+            {
+              show: false,
+              name: "WordPress",
+              logo: "logo-wordpress",
+            },
+          ],
+          php: [
+            {
+              show: true,
+              name: "PHP",
+              logo: null,
+            },
+          ],
+          java: [
+            {
+              show: false,
+              name: "Java",
+              logo: null,
+            },
+          ],
+          javascript: [
+            {
+              show: true,
+              name: "JavaScript",
+              logo: "logo-javascript",
+            },
+          ],
+          angular: [
+            {
+              show: true,
+              name: "Angular",
+              logo: "logo-Angular",
+            },
+          ],
+          css: [
+            {
+              show: true,
+              name: "CSS",
+              logo: "logo-css3",
+            },
+          ],
+          html: [
+            {
+              show: true,
+              name: "HTML5",
+              logo: "logo-html5",
+            },
+          ],
+          ionic: [
+            {
+              show: true,
+              name: "Ionic",
+              logo: "logo-ionic",
+            },
+          ],
+          laravel: [
+            {
+              show: false,
+              name: "Laravel",
+              logo: "logo-laravel",
+            },
+          ],
+          bootstrap: [
+            {
+              show: true,
+              name: "Bootstrap",
+              logo: null,
+            },
+          ],
+        },
+        description: [
+          {
+            text_one:
+              "InTouch Advertising required a quick CMS, as they wanted to updated themselves. Standard Theme via Themeforest installation and setup - with slight customization.",
+            text_two: "",
+          },
+        ],
+        blurb: "InTouch Advertising required a quick CMS...",
+        url: "https://intouchadvertising.co.za",
+      },
     ];
 
     return this.projectData;
