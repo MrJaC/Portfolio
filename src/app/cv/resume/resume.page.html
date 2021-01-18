@@ -61,7 +61,7 @@
                         <div *ngFor="let subItem of item.url " class="ion-justify-content-center ">
                             <ion-list>
                                 <div *ngFor="let git of subItem.github ">
-                                    <div *ngIf="git.visible===t rue ">
+                                    <div *ngIf="git.visible === true">
                                         <ion-item>
                                             <ion-button fill="clear " [href]="git.link ">
                                                 <ion-icon slot="start " [name]="git.icon ">
@@ -72,11 +72,11 @@
                                     </div>
                                 </div>
 
-                                <div *ngFor="let web of subItem.website ">
-                                    <div *ngIf="web.visible===t rue ">
+                                <div *ngFor="let web of subItem.website">
+                                    <div *ngIf="web.visible === true">
                                         <ion-item>
-                                            <ion-button fill="clear " [href]="web.link ">
-                                                <ion-icon slot="start " [name]="web.icon ">
+                                            <ion-button fill="clear" [href]="web.link">
+                                                <ion-icon slot="start" [name]="web.icon">
                                                 </ion-icon>
                                                 Website
                                             </ion-button>
@@ -86,7 +86,7 @@
 
 
                                 <div *ngFor="let play of subItem.playstore ">
-                                    <div *ngIf="play.visible===t rue ">
+                                    <div *ngIf="play.visible === true">
                                         <ion-item>
                                             <ion-button fill="clear " [href]="play.link ">
                                                 <ion-icon slot="start " [name]="play.icon ">
@@ -100,10 +100,10 @@
 
 
                                 <div *ngFor="let ios of subItem.ios_store ">
-                                    <div *ngIf="ios.visible===t rue ">
+                                    <div *ngIf="ios.visible === true">
                                         <ion-item>
-                                            <ion-button fill="clear " [href]="ios.link ">
-                                                <ion-icon slot="start " [name]="ios.icon ">
+                                            <ion-button fill="clear" [href]="ios.link">
+                                                <ion-icon slot="start" [name]="ios.icon">
                                                 </ion-icon>
                                                 iOSStore
 
@@ -171,10 +171,10 @@
         <ion-row class="ion-margin ">
 
             <ion-col *ngFor="let item of cvSkill ">
-                <ion-list lines="none " color="tertiary" class="ion-text-center ">
+                <ion-list lines="none " color="tertiary" class="ion-text-center">
                     <ion-item class="ion-text-center ">
                         {{item.tech}}
-                        <ion-icon color="primary" size="large " slot="start " [name]=item.logo></ion-icon>
+                        <ion-icon color="primary" size="large" slot="start" [name]="item.logo"></ion-icon>
                     </ion-item>
                 </ion-list>
             </ion-col>
