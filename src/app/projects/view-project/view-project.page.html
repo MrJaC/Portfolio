@@ -33,7 +33,7 @@
                 </div>
             </ion-col>
         </ion-row>
-        <ion-grid>
+        <ion-grid class="ion-no-padding">
 
             <section id="title">
                 <ion-row class="ion-align-items-center ion-text-center">
@@ -48,11 +48,17 @@
                 </ion-row>
             </section>
             <!-- Main Description -->
-            <ion-row>
-                <ion-col>
-                    {{ item.description}}
-                </ion-col>
-            </ion-row>
+            <section id="sec-2">
+                <ion-row>
+                    <ion-col>
+                        {{ item.description}}
+                    </ion-col>
+                </ion-row>
+            </section>
+            <section id="sec-3">
+
+            </section>
+
         </ion-grid>
     </div>
 </ion-content>

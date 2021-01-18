@@ -465,12 +465,14 @@ export class CvDataService {
               "MICROSOFT TECHNOLOGY ASSOCIATE: HTML5 APPLICATION DEVELOPMENT FUNDAMENTALS",
             date: "APRIL 2016 ",
             where: "ULTIMO - TAFE , SYDNEY",
+            showAttained: false
           },
           {
             id: 2,
             title: "CERTIFICATE IV IN WEB-BASED TECHNLOGIES ",
             date: "20/07/2015 - 25/11/2015 ",
             where: "ULTIMO - TAFE , SYDNEY",
+            showAttained: false
           },
           {
             id: 2,
@@ -478,6 +480,7 @@ export class CvDataService {
               "BTECT NATIONAL DIPLOMA IN IT PRACTITIONERS (SOFTWARE DEVELOPMENT)",
             date: "2010 - 2012",
             where: "Bedford College, UK",
+            showAttained: true,
             attained: [
               {
                 text: "Achieved 2 A Levels (Distinction, Merit)",

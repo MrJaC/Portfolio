@@ -63,8 +63,8 @@
                                 <div *ngFor="let git of subItem.github ">
                                     <div *ngIf="git.visible === true">
                                         <ion-item>
-                                            <ion-button fill="clear " [href]="git.link ">
-                                                <ion-icon slot="start " [name]="git.icon ">
+                                            <ion-button fill="clear" [href]="git.link">
+                                                <ion-icon slot="start" [name]="git.icon">
                                                 </ion-icon>
                                                 GitHub
                                             </ion-button>
@@ -88,8 +88,8 @@
                                 <div *ngFor="let play of subItem.playstore ">
                                     <div *ngIf="play.visible === true">
                                         <ion-item>
-                                            <ion-button fill="clear " [href]="play.link ">
-                                                <ion-icon slot="start " [name]="play.icon ">
+                                            <ion-button fill="clear" [href]="play.link">
+                                                <ion-icon slot="start" [name]="play.icon">
                                                 </ion-icon>
                                                 PlayStore
 
@@ -147,15 +147,19 @@
 
                         </ion-card-header>
                         <ion-card-content>
-                            <ion-list lines="none ">
-                                <div *ngFor="let subItems of item.attained ">
-                                    <ion-item>
-                                        <ion-note>
-                                            {{subItems.text}}
-                                        </ion-note>
-                                    </ion-item>
-                                </div>
-                            </ion-list>
+                            <div *ngIf="item.showAttained == true">
+                                <ion-list lines="none ">
+
+                                    <div *ngFor="let subItems of item.attained ">
+                                        <ion-item>
+                                            <ion-note>
+                                                {{subItems.text}}
+                                            </ion-note>
+                                        </ion-item>
+                                    </div>
+
+                                </ion-list>
+                            </div>
                         </ion-card-content>
                     </ion-card>
                 </div>
