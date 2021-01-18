@@ -9,11 +9,16 @@
 
 .header-image-project,
 ion-img {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 420px;
     width: 100%;
     max-height: 100%;
     max-width: 100%;
-    object-fit: auto;
+    object-fit: cover;
+    //position: 50% 50%;
 }
 
 #sec-2 {
@@ -28,4 +33,13 @@ ion-img {
     height: 400px;
     max-height: 100%;
     background-color: #34495e;
+}
+
+@media ( max-width: 576px) {
+    .header-image-project,
+    ion-img {
+        height: 220px;
+        max-height: 100%;
+        object-fit: auto;
+    }
 }

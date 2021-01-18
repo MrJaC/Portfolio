@@ -43,7 +43,7 @@ export class ViewProjectPage implements OnInit {
     let d = this.projData.getProjectdata();
     this.serviceData = d;
     this.projectData = this.serviceData.filter((test) => test.id === this.id);
-      return this.projectData;
+    return this.projectData;
   }
 
 }
